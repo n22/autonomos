@@ -1,0 +1,22 @@
+{
+  "name": "autonomos",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n22/autonomos.git"
+  },
+  "dependencies": {
+    "express": "^4.8.8"
+  },
+  "author": "narendra",
+  "license": "ITS",
+  "bugs": {
+    "url": "https://github.com/n22/autonomos/issues"
+  },
+  "homepage": "https://github.com/n22/autonomos"
+}
