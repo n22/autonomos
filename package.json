@@ -11,7 +11,8 @@
     "url": "https://github.com/n22/autonomos.git"
   },
   "dependencies": {
-    "express": "^4.8.8"
+    "express": "^4.8.8",
+    "jade": "^1.11.0"
   },
   "author": "narendra",
   "license": "ITS",

@@ -5,9 +5,19 @@ var sys = require('util');
 var exec = require('child_process').exec;
 var child;
 
-app.get('/',function(req,res){
-    res.sendFile(path.join(__dirname + '/index.html'));
+//hamdi
+var pub = __dirname+'/assets';
+app.use(express.static(pub));
+app.set('views', __dirname);
+app.set('view engine', 'jade');
+app.get('/', function(req, res){  
+  res.render('index');
 });
+//ahmadi
+
+// app.get('/',function(req,res){
+//     res.sendFile(path.join(__dirname + '/index.html'));    
+// });
 
 app.listen(1337)
 console.log('1337 is the magic port');
