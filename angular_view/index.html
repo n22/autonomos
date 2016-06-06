@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" ng-app="taApp">
+	<head>	
+	  	<meta charset="utf-8">
+	  	<title>My HTML File</title>	
+	  	<!-- jquery -->		
+		<script src="angular/bower_components/jquery/dist/jquery.min.js"></script>
+
+		<!-- angular -->		
+		<script src="angular/bower_components/angular/angular.js"></script>
+		<script src="angular/bower_components/angular-route/angular-route.js"></script>
+
+		<script src="angular/app.js"></script>
+		<script src="angular/controller/mainController.js"></script>
+		<!--script src="angular/controller/gameController.js"></script-->
+
+		<!-- material design -->
+		<link media="all" type="text/css" rel="stylesheet" href="angular/bower_components/angular-material/angular-material.min.css">
+		
+		<script src="angular/bower_components/angular-material/angular-material.min.js"></script>
+		<script src="angular/bower_components/angular-material/angular-material-mocks.js"></script>
+		<script src="angular/bower_components/angular-animate/angular-animate.min.js"></script>
+		<script src="angular/bower_components/angular-aria/angular-aria.min.js"></script>
+		
+		<!-- materialize -->
+		<?php print Html::style('../resources/assets/css/own.css') ?>				
+	</head>	
+	<body>
+		<md-toolbar>
+			<div class="md-toolbar-tools">				
+				<h2>
+				  <span>Tugas Akhir</span><span id="emails"></span>
+				</h2>
+				<span flex></span>
+				<!-- <md-button  aria-label="Loby" ng-href = '#/'>
+				  Loby
+				</md-button>								
+				<md-button  aria-label="Game" ng-href = '#/game'>
+				  Game
+				</md-button>
+				<md-button  aria-label="Game" ng-href = 'logout'>
+				  Log Out
+				</md-button> -->
+			</div>
+		</md-toolbar>
+		<div ng-view></div>
+	</body>
+</html>
+
+
+

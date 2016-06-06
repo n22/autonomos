@@ -1,0 +1,18 @@
+<div layout="row">	
+	<div flex>	
+	<md-card>
+	    <md-card-title class="chat">
+	      <md-card-title-text>          	
+	      	<span class="md-subhead blue chat-content" ng-repeat="chat in chats"><b>{{chat.user}}</b><br>{{chat.message}}</span>
+	        <span id = 'bottom'></span>
+	      </md-card-title-text>                    
+	    </md-card-title>
+	    <md-card-actions layout="row" layout-align="end center">          
+	      	<md-input-container flex>
+			  <label>#input ( kalo lo klik enter nanti muncul alert , isinya dari form)</label>
+			  <input type="text" ng-model = "input_field" ng-enter="submit()"/>
+			</md-input-container>
+	    </md-card-actions>
+	  </md-card>
+	</div>    
+</div>
